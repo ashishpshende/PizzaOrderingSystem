@@ -8,6 +8,7 @@ import { PizzaService } from 'src/app/services/entities/pizza/pizza.service';
 import { NgForm } from '@angular/forms';
 import { FormGroup, Validators, FormControl } from '@angular/forms';
 import { PizzaBase } from 'src/app/models/Pizza/pizza-base';
+import { CartItem } from 'src/app/models/Cart/cart-item';
 
 @Component({
   selector: 'app-pizza-menu',
@@ -109,6 +110,11 @@ export class PizzaMenuComponent implements OnInit, AfterViewInit {
       if (pizza.id == item.id) {
         pizza.addedToCart = true;
         pizza.quantity=1;
+        var cartItem = new CartItem();
+        cartItem.pizza= pizza;
+        cartItem.quantity = 1;
+        cartItem.totalPrice =  pizza.base.price + pizza.base.price +pizza.base.price +pizza.base.price;  
+        this.pizzaService.addToCart(cartItem).subscribe(result => {});
       }
     });
   }
@@ -116,6 +122,11 @@ export class PizzaMenuComponent implements OnInit, AfterViewInit {
     this.pizzas.forEach(item => {
       if (pizza.id == item.id) {
         pizza.quantity++;
+        var cartItem = new CartItem();
+        cartItem.pizza= pizza;
+        cartItem.quantity =  pizza.quantity;
+        cartItem.totalPrice =  pizza.base.price + pizza.base.price +pizza.base.price +pizza.base.price;  
+        this.pizzaService.addToCart(cartItem).subscribe(result => {});
       }
     });
   }
@@ -123,10 +134,20 @@ export class PizzaMenuComponent implements OnInit, AfterViewInit {
     this.pizzas.forEach(item => {
       if (pizza.quantity == 0) {
         pizza.addedToCart = false;
+        var cartItem = new CartItem();
+        cartItem.pizza= pizza;
+        cartItem.quantity =  pizza.quantity;
+        cartItem.totalPrice =  pizza.base.price + pizza.base.price +pizza.base.price +pizza.base.price;  
+        this.pizzaService.removeItemFromCart(cartItem).subscribe(result => {});
         return;
       }
       if (pizza.id == item.id) {
         pizza.quantity--;
+        var cartItem = new CartItem();
+        cartItem.pizza= pizza;
+        cartItem.quantity =  pizza.quantity;
+        cartItem.totalPrice =  pizza.base.price + pizza.base.price +pizza.base.price +pizza.base.price;  
+        this.pizzaService.addToCart(cartItem).subscribe(result => {});
       }
     });
   }
