@@ -1,0 +1,20 @@
+[
+  {
+    "Id": 1,
+    "Name": "Medium",
+    "Price": 345,
+    "Selected": false
+  },
+  {
+    "Id": 2,
+    "Name": "Large",
+    "Price": 457,
+    "Selected": false
+  },
+  {
+    "Id": 3,
+    "Name": "Regular",
+    "Price": 233,
+    "Selected": true
+  }
+]

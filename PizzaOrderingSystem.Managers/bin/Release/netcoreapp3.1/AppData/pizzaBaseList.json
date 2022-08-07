@@ -1,0 +1,12 @@
+[
+  {
+    "Name": "Regular",
+    "Price": 50,
+    "Selected": false
+  },
+  {
+    "Name": "Extra",
+    "Price": 100,
+    "Selected": false
+  }
+]

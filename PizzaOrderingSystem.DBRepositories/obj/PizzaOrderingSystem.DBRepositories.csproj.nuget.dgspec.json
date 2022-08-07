@@ -1,0 +1,202 @@
+{
+  "format": 1,
+  "restore": {
+    "E:\\Work\\Tavisca\\PizzaOrderingSystem\\PizzaOrderingSystem.DBRepositories\\PizzaOrderingSystem.DBRepositories.csproj": {}
+  },
+  "projects": {
+    "E:\\Work\\Tavisca\\PizzaOrderingSystem\\PizzaOrderingSystem.DBRepositories\\PizzaOrderingSystem.DBRepositories.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Work\\Tavisca\\PizzaOrderingSystem\\PizzaOrderingSystem.DBRepositories\\PizzaOrderingSystem.DBRepositories.csproj",
+        "projectName": "PizzaOrderingSystem.DBRepositories",
+        "projectPath": "E:\\Work\\Tavisca\\PizzaOrderingSystem\\PizzaOrderingSystem.DBRepositories\\PizzaOrderingSystem.DBRepositories.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "E:\\Work\\Tavisca\\PizzaOrderingSystem\\PizzaOrderingSystem.DBRepositories\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "E:\\Work\\Tavisca\\PizzaOrderingSystem\\PizzaOrderingSystem.Models\\PizzaOrderingSystem.Models.csproj": {
+                "projectPath": "E:\\Work\\Tavisca\\PizzaOrderingSystem\\PizzaOrderingSystem.Models\\PizzaOrderingSystem.Models.csproj"
+              },
+              "E:\\Work\\Tavisca\\PizzaOrderingSystem\\PizzaOrderingSystem.Repositories\\PizzaOrderingSystem.Repositories.csproj": {
+                "projectPath": "E:\\Work\\Tavisca\\PizzaOrderingSystem\\PizzaOrderingSystem.Repositories\\PizzaOrderingSystem.Repositories.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\Work\\Tavisca\\PizzaOrderingSystem\\PizzaOrderingSystem.Models\\PizzaOrderingSystem.Models.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Work\\Tavisca\\PizzaOrderingSystem\\PizzaOrderingSystem.Models\\PizzaOrderingSystem.Models.csproj",
+        "projectName": "PizzaOrderingSystem.Models",
+        "projectPath": "E:\\Work\\Tavisca\\PizzaOrderingSystem\\PizzaOrderingSystem.Models\\PizzaOrderingSystem.Models.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "E:\\Work\\Tavisca\\PizzaOrderingSystem\\PizzaOrderingSystem.Models\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\Work\\Tavisca\\PizzaOrderingSystem\\PizzaOrderingSystem.Repositories\\PizzaOrderingSystem.Repositories.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Work\\Tavisca\\PizzaOrderingSystem\\PizzaOrderingSystem.Repositories\\PizzaOrderingSystem.Repositories.csproj",
+        "projectName": "PizzaOrderingSystem.Repositories",
+        "projectPath": "E:\\Work\\Tavisca\\PizzaOrderingSystem\\PizzaOrderingSystem.Repositories\\PizzaOrderingSystem.Repositories.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "E:\\Work\\Tavisca\\PizzaOrderingSystem\\PizzaOrderingSystem.Repositories\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "E:\\Work\\Tavisca\\PizzaOrderingSystem\\PizzaOrderingSystem.Models\\PizzaOrderingSystem.Models.csproj": {
+                "projectPath": "E:\\Work\\Tavisca\\PizzaOrderingSystem\\PizzaOrderingSystem.Models\\PizzaOrderingSystem.Models.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

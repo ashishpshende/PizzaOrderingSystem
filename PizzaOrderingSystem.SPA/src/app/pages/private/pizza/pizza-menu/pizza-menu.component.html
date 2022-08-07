@@ -1,0 +1,127 @@
+<form #myForm="ngForm" (submit)="pizzaForm(myForm.value)" novalidate>
+  <div class="row filter-area">
+    <div class="col-lg-8 d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
+
+    </div>
+    <div class="col-lg-4 d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
+
+
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="card-container pizza-container">
+      <div *ngFor="let pizza of pizzas" class="card card-small pizza-card" tabindex="0">
+        <div class="row">
+          <img src={{pizza.image}} class="pizza-image">
+        </div>
+        <div class="row pizza-title">
+          {{pizza.name}}
+        </div>
+        <div class="row pizza-desc">
+          {{pizza.description}}
+        </div>
+
+        <div class="row pizza-options">
+
+          <div class="col-lg-6 d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
+            <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle option-dropdown" type="button" id="dropdownMenuButton"
+                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">                
+                <label class="label truncate" *ngIf="pizza.base.id==0">Select Base</label>
+                <label class="label truncate" *ngIf="pizza.base.id!=0">{{pizza.base.name}}</label>
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a *ngFor="let PizzaBase of PizzaBases" class="dropdown-item" (click)="PizzaBaseClicked(PizzaBase,pizza)" >{{PizzaBase.name}}</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
+            <div class="col-lg-6 d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
+              <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle option-dropdown" type="button" id="dropdownMenuButton"
+                  data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <label class="label truncate" *ngIf="pizza.size.id==0">Select Size</label>
+                  <label class="label truncate" *ngIf="pizza.size.id!=0">{{pizza.size.name}}</label>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a *ngFor="let pizzaSize of pizzaSizes" class="dropdown-item" (click)="pizzaSizeClicked(pizzaSize,pizza)" >{{pizzaSize.name}}</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row pizza-options">
+          <div class="col-lg-6 d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
+            <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle option-dropdown" type="button" id="dropdownMenuButton"
+                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <label class="" *ngIf="pizza.cheese.id==0">Select Cheese</label>
+                <label class="" *ngIf="pizza.cheese.id!=0">{{pizza.cheese.name}}</label>
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a *ngFor="let pizzaCheese of pizzaCheeseList" class="dropdown-item" (click)="pizzaCheeseClicked(pizzaCheese,pizza)">{{pizzaCheese.name}}</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
+            <div class="col-lg-6 d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
+              <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle option-dropdown" type="button" id="dropdownMenuButton"
+                  data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <label class="" *ngIf="pizza.topping.id==0">Select Toppings</label>
+                <label class="" *ngIf="pizza.topping.id!=0">{{pizza.topping.name}}</label>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a *ngFor="let pizzaTopping of pizzaToppings" class="dropdown-item"  (click)="pizzaToppingClicked(pizzaTopping,pizza)">{{pizzaTopping.name}}</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <button class="add-to-cart-button"  *ngIf="!pizza.addedToCart" (click)="addToCartButtonClickedFor(pizza)" title="Add to Cart"> Add to
+            Cart
+          </button>
+        </div>
+        <div class="row">
+          <button class="qty-button" *ngIf="pizza.addedToCart" (click)="plusQtyButtonClickedFor(pizza)"
+            title="Increase Quantity">
+            <i class="fa fa-plus"></i>
+          </button>
+          <label class="qty-label" *ngIf="pizza.addedToCart"> {{pizza.quantity}}
+          </label>
+          <button class="qty-button" *ngIf="pizza.addedToCart" (click)="minusQtyButtonClickedFor(pizza)"
+            title="Decrease Quantity">
+            <i class="fa fa-minus" *ngIf="pizza.quantity!=1"></i>
+            <i class="fa fa-trash-o fa-lg" *ngIf="pizza.quantity==1"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</form>
+
+<ng-template #content let-modal>
+  <div class="modal-header">
+    <h4 class="modal-title" id="modal-basic-title">Profile update</h4>
+    <button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')"></button>
+  </div>
+  <div class="modal-body">
+    <form>
+      <div class="mb-3">
+        <label for="dateOfBirth">Date of birth</label>
+        <div class="input-group">
+
+        </div>
+      </div>
+    </form>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-outline-dark" (click)="modal.close('Save click')">Save</button>
+  </div>
+</ng-template>

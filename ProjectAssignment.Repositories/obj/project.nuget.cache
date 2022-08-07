@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "tnFcn54dxIc3XhkwAYPvk0crJ/uMNwIttqLXxO+QhrhixSeUosjV7zi1k3sKgfFn7Ycdb78n1RQyU6j9+Qmvtg==",
+  "success": true,
+  "projectFilePath": "E:\\Work\\Tavisca\\PizzaOrderingSystem\\ProjectAssignment.Repositories\\ProjectAssignment.Repositories.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Admin\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

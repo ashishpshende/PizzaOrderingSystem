@@ -1,0 +1,17 @@
+[
+  {
+    "Name": "Marinara",
+    "Price": 20,
+    "Selected": false
+  },
+  {
+    "Name": "Cheese",
+    "Price": 50,
+    "Selected": false
+  },
+  {
+    "Name": "ranch",
+    "Price": 70,
+    "Selected": false
+  }
+]

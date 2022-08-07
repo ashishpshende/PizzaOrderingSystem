@@ -1,0 +1,122 @@
+﻿[
+  {
+    "Id": "1",
+    "Type": "Veg",
+    "Name": "Creamy Tomato Pasta Pizza - Veg",
+    "Image": "https://images.dominos.co.in/CreamyTomatoPPVG.jpg",
+    "Description": "Loaded with a delicious creamy tomato pasta topping , green capsicum",
+    "BasePrice": 100
+  },
+  {
+    "Id": "2",
+    "Type": "Veg",
+    "Name": "Corn n Cheese Paratha Pizza",
+    "Image": "https://images.dominos.co.in/Corn.jpg",
+    "Description": "A delicious fusion of corn stuffed paratha and cheesy pizza.",
+    "BasePrice": 100
+  },
+  {
+    "Id": "3",
+    "Type": "Veg",
+    "Name": "Paneer Paratha Pizza",
+    "Image": "https://images.dominos.co.in/Paneer.jpg",
+    "Description": "An epic fusion of paratha and pizza with melting cheese",
+    "BasePrice": 100
+  },
+  {
+    "Id": "4",
+    "Type": "Veg",
+    "Name": "The Unthinkable Pizza",
+    "Image": "https://images.dominos.co.in/PIZ0167.jpg",
+    "Description": "Loaded with Plant Based Protein topping along with Black Olives & Red Paprika",
+    "BasePrice": 100
+  },
+  {
+    "Id": "5",
+    "Type": "Veg",
+    "Name": "The Cheese Dominator",
+    "Image": "https://images.dominos.co.in/PIZ0170.jpg",
+    "Description": "Loaded with 1 Pound of Mozzarella and gooey Liquid Cheese",
+    "BasePrice": 100
+  },
+  {
+    "Id": "6",
+    "Type": "Veg",
+    "Name": "Cheese n Tomato",
+    "Image": "https://images.dominos.co.in/cheese_and_tomato.png",
+    "Description": "A delectable combination of cheese and juicy tomato",
+    "BasePrice": 100
+  },
+  {
+    "Id": "7",
+    "Type": "Veg",
+    "Name": "CHICKEN GOLDEN DELIGHT",
+    "Image": "https://www.dominos.co.in/files/items/MicrosoftTeams-image_(14).png",
+    "Description": "Mmm! Barbeque chicken with a topping of golden corn loaded with extra cheese. Worth its weight in gold!",
+    "BasePrice": 100
+  },
+  {
+    "Id": "8",
+    "Type": "Non-Veg",
+    "Name": "NON VEG SUPREME",
+    "Image": "https://www.dominos.co.in/files/items/MicrosoftTeams-image_(13).png",
+    "Description": "Bite into supreme delight of Black Olives, Onions, Grilled Mushrooms, Pepper BBQ Chicken, Peri-Peri Chicken, Grilled Chicken Rashers",
+    "BasePrice": 150
+  },
+  {
+    "Id": "9",
+    "Type": "Non-Veg",
+    "Name": "CHICKEN DOMINATOR",
+    "Image": "https://www.dominos.co.in/files/items/MicrosoftTeams-image_(11).png",
+    "Description": "Treat your taste buds with Double Pepper Barbecue Chicken, Peri-Peri Chicken, Chicken Tikka & Grilled Chicken Rashers",
+    "BasePrice": 150
+  },
+  {
+    "Id": "10",
+    "Type": "Non-Veg",
+    "Name": "PEPPER BARBECUE & ONION",
+    "Image": "https://www.dominos.co.in/files/items/Pepper_Barbeque_&_Onion.jpg",
+    "Description": "Pepper Barbecue Chicken I Onion",
+    "BasePrice": 150
+  },
+  {
+    "Id": "11",
+    "Type": "Non-Veg",
+    "Name": "PEPPER BARBECUE CHICKEN",
+    "Image": "https://www.dominos.co.in/files/items/MicrosoftTeams-image_(15).png",
+    "Description": "Pepper Barbecue Chicken I Cheese",
+    "BasePrice": 150
+  },
+  {
+    "Id": "12",
+    "Type": "Non-Veg",
+    "Name": "CHICKEN SAUSAGE",
+    "Image": "https://www.dominos.co.in/files/items/MicrosoftTeams-image_(17).png",
+    "Description": "Chicken Sausage & Cheese",
+    "BasePrice": 150
+  },
+  {
+    "Id": "13",
+    "Type": "Non-Veg",
+    "Name": "CHICKEN FIESTA",
+    "Image": "https://www.dominos.co.in/files/items/MicrosoftTeams-image_(10).png",
+    "Description": "Grilled Chicken Rashers I Peri-Peri Chicken I Onion I Capsicum",
+    "BasePrice": 150
+  },
+  {
+    "Id": "14",
+    "Type": "Non-Veg",
+    "Name": "INDI CHICKEN TIKKA",
+    "Image": "https://www.dominos.co.in/files/items/MicrosoftTeams-image_(18).png",
+    "Description": "The wholesome flavour of tandoori masala with Chicken tikka I onion I red paprika I mint mayo",
+    "BasePrice": 150
+  },
+  {
+    "Id": "15",
+    "Type": "Non-Veg",
+    "Name": "CHICKEN PEPPERONI",
+    "Image": "https://www.dominos.co.in/files/items/MicrosoftTeams-image_(20).png",
+    "Description": "A classic American taste! Relish the delectable flavor of Chicken Pepperoni, topped with extra cheese",
+    "BasePrice": 150
+  }
+]

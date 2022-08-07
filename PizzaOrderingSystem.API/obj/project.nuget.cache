@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "WW/MQF13w9qE7JejsJUQAFp020KJtYldV3M3GJ2BVcwlqxONJEeNqAyQ1cxr8CHTvahsCYUMYfEv9vVPH27rqQ==",
+  "success": true,
+  "projectFilePath": "E:\\Work\\Tavisca\\PizzaOrderingSystem\\PizzaOrderingSystem.API\\PizzaOrderingSystem.API.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Admin\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\system.text.encodings.web\\6.0.0\\system.text.encodings.web.6.0.0.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\system.text.json\\6.0.5\\system.text.json.6.0.5.nupkg.sha512"
+  ],
+  "logs": []
+}

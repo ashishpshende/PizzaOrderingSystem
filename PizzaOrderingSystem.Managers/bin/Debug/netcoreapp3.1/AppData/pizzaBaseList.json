@@ -1,0 +1,26 @@
+[
+  {
+    "Id": 1,
+    "Name": "100% Wheat Thin Crust",
+    "Price": 50,
+    "Selected": false
+  },
+  {
+    "Id": 2,
+    "Name": "New Hand Tossed",
+    "Price": 100,
+    "Selected": false
+  },
+  {
+    "Id": 3,
+    "Name": "Fresh Pan Pizza",
+    "Price": 100,
+    "Selected": false
+  },
+  {
+    "Id": 4,
+    "Name": "Classic Hand Tossed",
+    "Price": 100,
+    "Selected": false
+  }
+]

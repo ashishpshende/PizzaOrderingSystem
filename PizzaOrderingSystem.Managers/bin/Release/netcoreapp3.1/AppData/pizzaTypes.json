@@ -1,0 +1,12 @@
+[
+  {
+    "Name": "Veg",
+    "Price": 150,
+    "Selected": false
+  },
+  {
+    "Name": "Non-Veg",
+    "Price": 200,
+    "Selected": false
+  }
+]

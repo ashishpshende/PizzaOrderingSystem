@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PizzaOrderingSystem.DBRepositories\PizzaOrderingSystem.DBRepositories.csproj" />
+    <ProjectReference Include="..\PizzaOrderingSystem.FileRepositories\PizzaOrderingSystem.FileRepositories.csproj" />
+    <ProjectReference Include="..\PizzaOrderingSystem.Models\PizzaOrderingSystem.Models.csproj" />
+    <ProjectReference Include="..\PizzaOrderingSystem.Repositories\PizzaOrderingSystem.Repositories.csproj" />
+  </ItemGroup>
+
+</Project>

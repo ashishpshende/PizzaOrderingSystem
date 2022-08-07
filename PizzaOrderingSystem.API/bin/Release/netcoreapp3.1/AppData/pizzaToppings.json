@@ -1,0 +1,18 @@
+[
+  {
+    "Name": "Pepperoni",
+    "Price": 20    
+  },
+  {
+    "Name": "Sausage",
+    "Price": 60
+  },
+  {
+    "Name": "Mushrooms",
+    "Price": 200
+  },
+  {
+    "Name": "Onions",
+    "Price": 50
+  }
+]
