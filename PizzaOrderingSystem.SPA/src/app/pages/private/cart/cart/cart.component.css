@@ -1,0 +1,242 @@
+.cart-area {
+  margin-top: 150px;
+
+}
+
+.cart-pizza-container {
+  display: flex;
+  height: 100%;
+}
+
+.cart-pizza-card {
+  background-color: rgb(216, 203, 132);
+  height: 450px;
+  margin-top: 10px;
+  width: 90%;
+  flex-direction: column;
+}
+
+.cart-pizza-image {
+  background-color: cyan;
+  height: 350px;
+  margin: 10px;
+  width: 425px;
+  border-style: groove;
+}
+
+.cart-pizza-title {
+  font-size: x-large;
+  font-weight: 900;
+  text-align: center;
+}
+
+.cart-pizza-desc {
+  text-align: left;
+  font-size: medium;
+  font-weight: 200;
+}
+
+.portfolio-flters {
+  padding: 0;
+  margin: 0 auto 25px auto;
+  list-style: none;
+  text-align: center;
+  background: #fff;
+  border-radius: 50px;
+  padding: 2px 15px;
+}
+
+.pizza-type-label {
+  text-align: right;
+  font-size: larger;
+  color: brown;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.qty-label {
+  margin-left: 5px;
+  margin-right: 5px;
+  width: 10px;
+  font-size: larger;
+  margin-top: 15px;
+  font-weight: 800;
+  text-align: center;
+}
+
+.add-to-cart-button {
+  border-radius: 5px;
+  border-style: solid;
+  background-color: blueviolet;
+  color: whitesmoke;
+  margin-top: 10px;
+  width: 300px;
+  height: 40px;
+}
+
+.qty-button {
+  margin-top: 10px;
+  width: 120px;
+  border-radius: 5px;
+  height: 40px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  -o-text-overflow: ellipsis;
+  -ms-text-overflow: ellipsis;
+}
+
+.label {
+  max-width: 120px;
+  padding: 5px;
+  position: relative;
+}
+
+.label:after {
+  position: absolute;
+  right: -3px;
+  top: 4px;
+  content: '*';
+  color: red;
+  width: 10px;
+  display: inline-block;
+}
+
+.pizza-options {
+  margin-top: 8px;
+}
+
+.option-dropdown {
+  width: 145px;
+  height: 30px;
+  margin-bottom: 12px;
+}
+
+.drop-down-button {
+  border-style: none;
+  background-color: #e3edba;
+}
+
+.cart-item {
+  padding: 10px;
+  background-color: #e3edba;
+  margin-left: 20px;
+  margin-right: 10px;
+  border-radius: 10px;
+}
+
+.cart-pizza-option-area {
+  margin-top: 20px;
+  flex-direction: column;
+  background-color: aliceblue;
+  padding-left: 20px;
+  padding-top: 10px;
+  border-radius: 10px;
+  margin-right: 5px;
+}
+
+.cart-pizza-qty-area {
+  margin-top: 5px;
+  background-color: aliceblue;
+  height: 55px;
+  text-align: center;
+  margin-right: 5px;
+  border-radius: 10px;
+}
+
+.cart-pizza-image-area {
+  font-size: medium;
+}
+
+.cart-pizza-desc-area {
+  text-align: left;
+  font-size: medium;
+}
+
+.cart-pizza-price-area {
+  font-size: medium;
+  /* margin: 10px;*/
+  border-radius: 10px;
+
+}
+
+.cart-pizza-option-label {
+  font-weight: 700;
+  margin-left: 0px;
+}
+
+.delivery-address {
+  background-color: aliceblue;
+  border-radius: 10px;
+  text-align: left;
+  display: flex;
+  flex-flow: row wrap;
+  right: 0px;
+  left: 0px;
+  max-width: 100%;
+  flex-basis: auto;
+  border-radius: 10px;
+  box-shadow: rgb(0 0 0 / 12%) 0px 2px 2px 0px, rgb(0 0 0 / 12%) 0px 2px 4px 0px;
+  -webkit-box-pack: center;
+  justify-content: center;
+  width: 100%;
+  padding: 1rem 1rem 0.5rem 0.5rem;
+  box-sizing: border-box;
+}
+
+.offers {
+  background-color: aliceblue;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  flex-flow: row wrap;
+  right: 0px;
+  left: 0px;
+  max-width: 100%;
+  flex-basis: auto;
+  border-radius: 10px;
+  box-shadow: rgb(0 0 0 / 12%) 0px 2px 2px 0px, rgb(0 0 0 / 12%) 0px 2px 4px 0px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 1rem 1.2rem;
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  cursor: pointer;
+  -webkit-box-align: center;
+  align-items: center;
+
+}
+
+.price-details {
+  background-color: aliceblue;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  box-shadow: rgb(0 0 0 / 12%) 0px 2px 2px 0px, rgb(0 0 0 / 12%) 0px 2px 4px 0px;
+}
+.price-details-title
+{
+  font-weight: 800;
+}
+.price-details-section
+{
+  margin: 10px;
+}
+.price-details-section-total
+{
+  margin: 10px;
+  border-left: 0px;
+  border-right: 0px;
+  border-top: 1px;
+  border-bottom: 1px;
+  border-style: dashed;
+
+}

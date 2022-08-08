@@ -1,0 +1,258 @@
+<div class="cart-area">
+    <div *ngIf="cart.items.length==0" class="row">
+        <div class="col-lg-12">
+            <div class="card-container no-item-cart">
+                <div class="card">
+                    No Items Available
+                </div>
+            </div>
+        </div>
+    </div>
+    <div *ngIf="cart.items.length!=0" class="row">
+        <div class="col-lg-8">
+            <div *ngFor="let cartItem of cart.items" class="row cart-item">
+                <div class="col-lg-6 d-flex cart-pizza-image-area">
+                    <img src={{cartItem.pizza.image}} class="cart-pizza-image">
+                </div>
+                <div class="col-lg-6 cart-pizza-desc-area">
+                    <div class="row cart-pizza-title">
+                        {{cartItem.pizza.name}}
+                    </div>
+                    <div class="row cart-pizza-desc">
+                        {{cartItem.pizza.description}}
+                    </div>
+                    <div class="row cart-pizza-option-area">
+                        <div class="row">
+                            <div class="col-lg-6 d-flex cart-pizza-option-label">
+                                Pizza Topping
+                            </div>
+                            <div class="col-lg-6 d-flex cart-pizza-image-area">
+                                <div class="dropdown">
+                                    <button class="btn btn-secondary dropdown-toggle option-dropdown" type="button"
+                                        id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true"
+                                        aria-expanded="false">
+                                        <label class="" *ngIf="cartItem.pizza.topping.id==0">Select Toppings</label>
+                                        <label class=""
+                                            *ngIf="cartItem.pizza.topping.id!=0">{{cartItem.pizza.topping.name}}</label>
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                        <a *ngFor="let pizzaTopping of pizzaToppings" class="dropdown-item"
+                                            (click)="pizzaToppingClicked(pizzaTopping,pizza)">{{pizzaTopping.name}}</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6 d-flex cart-pizza-option-label">
+                                Pizza Base
+                            </div>
+                            <div class="col-lg-6 d-flex cart-pizza-image-area">
+                                <div class="dropdown">
+                                    <button class="btn btn-secondary dropdown-toggle option-dropdown" type="button"
+                                        id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true"
+                                        aria-expanded="false">
+                                        <label class="label truncate" *ngIf="cartItem.pizza.base.id==0">Select
+                                            Base</label>
+                                        <label class="label truncate"
+                                            *ngIf="cartItem.pizza.base.id!=0">{{cartItem.pizza.base.name}}</label>
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                        <a *ngFor="let PizzaBase of PizzaBases" class="dropdown-item"
+                                            (click)="PizzaBaseClicked(PizzaBase,pizza)">{{PizzaBase.name}}</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6 d-flex cart-pizza-option-label">
+                                Pizza Size
+                            </div>
+                            <div class="col-lg-6 d-flex cart-pizza-image-area">
+                                <div class="dropdown">
+                                    <button class="btn btn-secondary dropdown-toggle option-dropdown" type="button"
+                                        id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true"
+                                        aria-expanded="false">
+                                        <label class="label truncate" *ngIf="cartItem.pizza.size.id==0">Select
+                                            Size</label>
+                                        <label class="label truncate"
+                                            *ngIf="cartItem.pizza.size.id!=0">{{cartItem.pizza.size.name}}</label>
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                        <a *ngFor="let pizzaSize of pizzaSizes" class="dropdown-item"
+                                            (click)="pizzaSizeClicked(pizzaSize,pizza)">{{pizzaSize.name}}</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6 d-flex cart-pizza-option-label">
+                                Pizza Sauce
+                            </div>
+                            <div class="col-lg-6 d-flex cart-pizza-image-area">
+                                <div class="dropdown">
+                                    <button class="btn btn-secondary dropdown-toggle option-dropdown" type="button"
+                                        id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true"
+                                        aria-expanded="false">
+                                        <label class="label truncate" *ngIf="cartItem.pizza.size.id==0">Select
+                                            Size</label>
+                                        <label class="label truncate"
+                                            *ngIf="cartItem.pizza.size.id!=0">{{cartItem.pizza.size.name}}</label>
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                        <a *ngFor="let pizzaSize of pizzaSauces" class="dropdown-item"
+                                            (click)="pizzaSauceClicked(pizzaSize,pizza)">{{pizzaSize.name}}</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6 d-flex cart-pizza-option-label">
+                                Pizza Cheese
+                            </div>
+                            <div class="col-lg-6 d-flex cart-pizza-image-area">
+                                <div class="dropdown">
+                                    <button class="btn btn-secondary dropdown-toggle option-dropdown" type="button"
+                                        id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true"
+                                        aria-expanded="false">
+                                        <label class="" *ngIf="cartItem.pizza.cheese.id==0">Select Cheese</label>
+                                        <label class=""
+                                            *ngIf="cartItem.pizza.cheese.id!=0">{{cartItem.pizza.cheese.name}}</label>
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                        <a *ngFor="let pizzaCheese of pizzaCheeseList" class="dropdown-item"
+                                            (click)="pizzaCheeseClicked(pizzaCheese,pizza)">{{pizzaCheese.name}}</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row cart-pizza-qty-area">
+
+                        <div class="col-lg-4">
+                            <button class="qty-button" (click)="minusQtyButtonClickedFor(pizza)"
+                                title="Decrease Quantity">
+                                <i class="fa fa-minus" *ngIf="pizza.quantity!=1"></i>
+                                <i class="fa fa-trash-o fa-lg" *ngIf="pizza.quantity==1"></i>
+                            </button>
+                        </div>
+                        <div class="col-lg-4">
+                            <label class="qty-label"> {{pizza.quantity}}
+                            </label>
+                        </div>
+                        <div class="col-lg-4">
+                            <button class="qty-button" (click)="plusQtyButtonClickedFor(pizza)"
+                                title="Increase Quantity">
+                                <i class="fa fa-plus"></i>
+                            </button>
+                        </div>
+
+
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 cart-pizza-price-area">
+            <div class="row delivery-address">
+                <div class="col-lg-6 cart-pizza-desc-area">
+                    Delivery Address
+                </div>
+                <div class="col-lg-6 cart-pizza-desc-area">
+
+                    <div class="injectStyles-sc-1jy9bcf-0 cpLABG">
+                        <div class="adrs-cntr">
+                            <div class="icon-cnt">
+                                <div class="injectStyles-sc-1jy9bcf-0 bLFVnP">
+
+                                </div>
+                            </div>
+                            <div class="adrs-wrpr">
+                                <div class="address-cont">
+                                    <p class="current-heading">Current Address</p>
+                                    <p class="current-address">DSK Vishwa, Dhayari, Pune</p>
+                                </div>
+                                <div class="edt-adrs">Edit Address</div>
+                            </div>
+                            <div class="injectStyles-sc-1jy9bcf-0 kWuABf">
+                                <button class="btn--grn"><span>Change</span></button>
+                            </div>
+                        </div>
+                        <div class="lgn-scrn">
+                            <div class="icon-cnt">
+                                <div class="injectStyles-sc-1jy9bcf-0 dqRMJr">
+
+                                </div>
+                            </div>
+                            <p class="login-msg">Login to use your saved addresses</p>
+                            <div class="injectStyles-sc-1jy9bcf-0 bnglEO">
+                                <button class="btn--grn"><span>My Address</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row offers">
+                <div class="col-lg-6 cart-pizza-desc-area">
+                    Offers
+                </div>
+                <div class="col-lg-6 cart-pizza-desc-area">
+                    <div class="injectStyles-sc-1jy9bcf-0 hkXrqZ" data-label="offers">
+                        <div class="offr-strp-icn injectStyles-sc-1jy9bcf-0 hytckB">
+
+                        </div>
+                        <div class="offr-strp-txt">
+                            <span class="offr-strp-txt__uppr">Select offer / Apply coupon</span>
+                            <span class="offr-strp-txt__lwr">Get discount with your order</span>
+                        </div>
+                        <div class="offr-strp-icn__rght injectStyles-sc-1jy9bcf-0 ePZBKw">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row price-details">
+
+                <div class="col-lg-12 price-details-title">
+                    <label>Price Details</label>
+                </div>
+                <div class="col-lg-12 price-details-section">
+                    <div class="row price-details-section">
+                        <div class="col-lg-6">
+                            Sub Total
+                        </div>
+                        <div class="col-lg-6">
+                            Rs. 0.00
+                        </div>
+                    </div>
+                    <div class="row price-details-section">
+                        <div class="col-lg-6">
+                            Discount
+                        </div>
+                        <div class="col-lg-6 ">
+                            Rs. 0.00
+                        </div>
+                    </div>
+                    <div class="row price-details-section">
+                        <div class="col-lg-6">
+                            Taxes and Charges
+                        </div>
+                        <div class="col-lg-6">
+                            Rs. 0.00
+                        </div>
+                    </div>
+                    <div class="row price-details-section-total">
+                        <div class="col-lg-6">
+                            Grand Total
+                        </div>
+                        <div class="col-lg-6">
+                            Rs. 0.00
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
