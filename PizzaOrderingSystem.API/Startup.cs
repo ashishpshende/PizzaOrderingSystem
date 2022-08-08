@@ -26,6 +26,8 @@ namespace PizzaOrderingSystem
             services.AddScoped<IOrderRepository, OrderFileRepository>();
             services.AddScoped<IPaymentRepository, PaymentFileRepository>();
             services.AddScoped<IPizzaRepository, PizzaFileRepository>();
+            services.AddScoped<IUserRepository, UserFileRepository>();
+
 
             services.AddScoped<IOrderDataManger, OrderDataManger>();
             services.AddScoped<IPizzaDataManager, PizzaDataManager>();

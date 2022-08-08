@@ -11,6 +11,11 @@ namespace PizzaOrderingSystem.API.DataManagers
             throw new NotImplementedException();
         }
 
+        public bool Login(User user)
+        {
+            throw new NotImplementedException();
+        }
+
         public bool Save(User user)
         {
             throw new NotImplementedException();

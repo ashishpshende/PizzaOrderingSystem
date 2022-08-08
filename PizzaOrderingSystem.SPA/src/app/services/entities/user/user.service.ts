@@ -18,11 +18,11 @@ export class UserService {
 
     this.currentUser = new User();
   }
-  getPizzas(): Observable<User> {
+  userProfile(): Observable<User> {
     return this.http.get<User>(URLConstants.USER_PROFILE)
     .pipe(
       tap(_ => this.networkService.log('fetched Entities')),
-      catchError(this.networkService.handleError<User>('get', []))
+      catchError(this.networkService.handleError<User>('get', new User()))
     );
   }
   login(user:User):  Observable<Boolean> {

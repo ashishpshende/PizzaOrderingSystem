@@ -2,10 +2,12 @@
 {
     public class Address : BaseModel
     {
-       
-        public string Plot { get; set; }
 
-        public string Landmark { get; set; }
+        public string Type { get; set; }
+
+        public string Contact { get; set; }
+
+        public string Society { get; set; }
 
         public string Area { get; set; }
 

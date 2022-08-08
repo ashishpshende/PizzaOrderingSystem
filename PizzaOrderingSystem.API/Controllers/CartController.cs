@@ -17,8 +17,10 @@ namespace PizzaOrderingSystem.API.Controllers
         }
 
         [HttpGet("items")]
-        public Cart GetCartItem(User user)
+        public Cart GetCartItem()
         {
+            User user = new User();
+            user.Id = 1;
             return _cartManager.Get(user);
         }
 

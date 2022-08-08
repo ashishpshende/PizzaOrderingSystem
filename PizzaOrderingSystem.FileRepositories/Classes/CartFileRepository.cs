@@ -36,6 +36,7 @@ namespace PizzaOrderingSystem.FileRepositories.Classes
             }
             catch (Exception ex)
             {
+                Console.WriteLine(ex.Message);
                 return false;
             }
         }

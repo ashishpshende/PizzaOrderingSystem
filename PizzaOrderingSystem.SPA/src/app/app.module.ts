@@ -14,6 +14,7 @@ import { HeaderComponent } from './pages/private/header/header.component';
 import { PizzaMenuComponent } from './pages/private/pizza/pizza-menu/pizza-menu.component';
 import {FormsModule} from '@angular/forms';
 import { CartComponent } from './pages/private/cart/cart/cart.component';
+import { LoginComponent } from './pages/public/login/login.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { CartComponent } from './pages/private/cart/cart/cart.component';
     FooterComponent,
     HeaderComponent,
     PizzaMenuComponent   ,
-    CartComponent  
+    CartComponent,
+    LoginComponent  
   ],
   imports: [
     BrowserModule,

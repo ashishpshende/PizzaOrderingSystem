@@ -9,10 +9,12 @@ import { AddAddressComponent } from './pages/private/User/Address/add-address/ad
 import { UpdateAddressComponent } from './pages/private/User/Address/update-address/update-address.component';
 import { ViewAddressComponent } from './pages/private/User/Address/view-address/view-address.component';
 import { UserProfileComponent } from './pages/private/User/user-profile/user-profile.component';
+import { LoginComponent } from './pages/public/login/login.component';
 
 
 const routes: Routes = [
-    {path: "", pathMatch: "full",redirectTo: "pizza-menu"},
+    {path: "", pathMatch: "full",redirectTo: "login"},
+    { path: 'login', component: LoginComponent }, 
     { path: 'home', component: HomeComponent }, 
     { path: 'pizza-menu', component: PizzaMenuComponent },    
     { path: 'payment', component: PaymentComponent },    

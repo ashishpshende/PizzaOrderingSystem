@@ -6,6 +6,7 @@ namespace PizzaOrderingSystem.API.DataManagers
     public interface IOrderDataManger
     {
         public bool Save(Order order);
-        public List<Order> Get(int UserId);
+        public Order GetOrder(int OrderId);
+        public List<Order> GetOrders(int UserId);
     }
 }

@@ -1,3 +1,152 @@
-{
-
-}
+[
+  {
+    "id": 1,
+    "name": "Ashish Shende",
+    "username": "ashishpshende",
+    "password": "$2a$11$Vgw2HdGOB75UbbI1/VJISu8H1zxn2jIaW8XlpFuXMA5vPSHQT7p9K",
+    "mobile": "+91-9028621428",
+    "email": "ashishpshende@gmail.com",
+    "addresses": [
+      {
+        "name": "Home",
+        "type": "Home",
+        "contact": "+91-9028621428",
+        "society": "Ujwal Classic",
+        "area": "Dhayari",
+        "city": "Pune",
+        "state": "Maharashtra",
+        "country": "India"
+      },
+      {
+        "name": "Office",
+        "type": "Office",
+        "contact": "+91-9028621428",
+        "society": "ECommerce Building",
+        "area": "Yerwada",
+        "city": "Pune",
+        "state": "Maharashtra",
+        "country": "India"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Thomas Gray",
+    "username": "gray",
+    "password": "",
+    "mobile": "+91-9028621428",
+    "email": "thomasgray@gmail.com",
+    "addresses": [
+      {
+        "name": "Home",
+        "type": "Home",
+        "contact": "+91-9028621428",
+        "society": "Ujwal Classic",
+        "area": "Dhayari",
+        "city": "Pune",
+        "state": "Maharashtra",
+        "country": "India"
+      },
+      {
+        "name": "Office",
+        "type": "Office",
+        "contact": "+91-9028621428",
+        "society": "ECommerce Building",
+        "area": "Yerwada",
+        "city": "Pune",
+        "state": "Maharashtra",
+        "country": "India"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Doe Joe",
+    "username": "doe",
+    "password": "",
+    "mobile": "+91-9028621428",
+    "email": "doejoe@gmail.com",
+    "addresses": [
+      {
+        "name": "Home",
+        "type": "Home",
+        "contact": "+91-9028621428",
+        "society": "Ujwal Classic",
+        "area": "Dhayari",
+        "city": "Pune",
+        "state": "Maharashtra",
+        "country": "India"
+      },
+      {
+        "name": "Office",
+        "type": "Office",
+        "contact": "+91-9028621428",
+        "society": "ECommerce Building",
+        "area": "Yerwada",
+        "city": "Pune",
+        "state": "Maharashtra",
+        "country": "India"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Robin Stone",
+    "username": "stone",
+    "password": "",
+    "mobile": "+91-9028621428",
+    "email": "stone@gmail.com",
+    "addresses": [
+      {
+        "name": "Home",
+        "type": "Home",
+        "contact": "+91-9028621428",
+        "society": "Ujwal Classic",
+        "area": "Dhayari",
+        "city": "Pune",
+        "state": "Maharashtra",
+        "country": "India"
+      },
+      {
+        "name": "Office",
+        "type": "Office",
+        "contact": "+91-9028621428",
+        "society": "ECommerce Building",
+        "area": "Yerwada",
+        "city": "Pune",
+        "state": "Maharashtra",
+        "country": "India"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Nancy Roberson",
+    "username": "nancy",
+    "password": "",
+    "mobile": "+91-9028621428",
+    "email": "nancy@gmail.com",
+    "addresses": [
+      {
+        "name": "Home",
+        "type": "Home",
+        "contact": "+91-9028621428",
+        "society": "Ujwal Classic",
+        "area": "Dhayari",
+        "city": "Pune",
+        "state": "Maharashtra",
+        "country": "India"
+      },
+      {
+        "name": "Office",
+        "type": "Office",
+        "contact": "+91-9028621428",
+        "society": "ECommerce Building",
+        "area": "Yerwada",
+        "city": "Pune",
+        "state": "Maharashtra",
+        "country": "India"
+      }
+    ]
+  }
+]
