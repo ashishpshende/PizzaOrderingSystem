@@ -9,7 +9,17 @@ namespace PizzaOrderingSystem.API.DataManagers
 {
     public class OrderDBRepository : IOrderRepository
     {
-        public List<Order> Get(int UserId)
+        public bool Cancel(Order order)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Order GetOrder(int OrderId)
+        {
+            throw new NotImplementedException();
+        }
+
+        public List<Order> GetOrders(int UserId)
         {
             throw new NotImplementedException();
         }

@@ -24,7 +24,7 @@ export class CartComponent implements OnInit {
   PizzaBases: PizzaBase[];
   pizzaSauces: PizzaSuace[];
   pizzaCheeseList: PizzaCheese[];
-  pizzaToppings: PizzaTopping[];
+  pizzaTopping: PizzaTopping[];
   constructor(private pizzaService: PizzaService,
     private cartService:CartService) { 
     this.cart = new Cart();
@@ -34,7 +34,7 @@ export class CartComponent implements OnInit {
     this.pizzaSizes = new Array();
     this.pizzaSauces = new Array();
     this.pizzaCheeseList = new Array();
-    this.pizzaToppings = new Array();
+    this.pizzaTopping = new Array();
     this.options = new Array();
   }
 
@@ -51,8 +51,8 @@ export class CartComponent implements OnInit {
     this.pizzaService.getPizzaCheeseList().subscribe(entities => {
       this.pizzaCheeseList = entities;
     })
-    this.pizzaService.getPizzaToppings().subscribe(entities => {
-      this.pizzaToppings = entities;
+    this.pizzaService.getPizzaTopping().subscribe(entities => {
+      this.pizzaTopping = entities;
     })
     this.pizzaService.getPizzaSizes().subscribe(entities => {
       this.pizzaSizes = entities;

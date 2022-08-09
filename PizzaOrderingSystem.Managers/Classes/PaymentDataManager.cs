@@ -1,8 +1,8 @@
-﻿using ProjectAssignment.Repositories.Contracts;
+﻿using PizzaOrderingSystem.Managers.Contracts;
 
-namespace PizzaOrderingSystem.FileRepositories.Classes
+namespace PizzaOrderingSystem.Managers.Classes
 {
-    public class PaymentFileRepository : IPaymentRepository
+    public class PaymentDataManager : IPaymentDataManager
     {
         public bool Pay(double amount, string OrderId)
         {
@@ -11,7 +11,7 @@ namespace PizzaOrderingSystem.FileRepositories.Classes
 
         public void PaymentFailureCallback(string error, string OrderId)
         {
-            
+
         }
 
         public void PaymentSuccessCallback(string transaction, string OrderId)
@@ -20,11 +20,12 @@ namespace PizzaOrderingSystem.FileRepositories.Classes
 
         public bool Refund(double amount, string OrderId)
         {
-            return true; 
+            return true;
         }
 
         public void RefundFailureCallback(string error, string OrderId)
         {
+
         }
 
         public void RefundSuccessCallback(string transaction, string OrderId)

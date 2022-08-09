@@ -9,7 +9,6 @@ export class BaseModel {
     public updatedBy:BaseModel | undefined
     public updatedOn:string| undefined;
     public ImageUrl:string| undefined;
-    public totalPrice:number;
     public  ThumbImageUrl:string| undefined;
 
     public  FullSizeImageUrl:string| undefined;
@@ -20,7 +19,7 @@ export class BaseModel {
 
     constructor()
     {
-        this.totalPrice =0;
+        
         // this.id = (requestJSON["id"] != null && requestJSON["id"] != undefined) ? requestJSON["id"] : 0;
 
        

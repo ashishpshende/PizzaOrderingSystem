@@ -9,16 +9,17 @@ namespace PizzaOrderingSystem.Models.Classes.Pizzas
         public string Image { get; set; }
         public double BasePrice { get; set; }
         public double Totalprice { get; set; }
-        public List<PizzaSauce> Sauce { get; set; }
-        public List<PizzaTopping> Toppings { get; set; }
+        public PizzaSauce Sauce { get; set; }
+        public PizzaTopping Topping { get; set; }
         public PizzaBase Base { get; set; }
         public PizzaSize Size { get; set; }
+        public PizzaCheese Cheese { get; set; }
 
         public Pizza()
         {
             Image = string.Empty;
-            Sauce = new List<PizzaSauce>();
-            Toppings = new List<PizzaTopping>();
+            Sauce = new PizzaSauce();
+            Topping = new PizzaTopping();
             Base = new PizzaBase();
             Size = new PizzaSize();
 

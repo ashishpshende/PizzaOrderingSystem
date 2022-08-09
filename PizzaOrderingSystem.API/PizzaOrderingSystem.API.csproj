@@ -14,6 +14,7 @@
     <ProjectReference Include="..\PizzaOrderingSystem.Managers\PizzaOrderingSystem.Managers.csproj" />
     <ProjectReference Include="..\PizzaOrderingSystem.Models\PizzaOrderingSystem.Models.csproj" />
     <ProjectReference Include="..\PizzaOrderingSystem.Repositories\PizzaOrderingSystem.Repositories.csproj" />
+    <ProjectReference Include="..\PizzaOrderingSystem.Utils\PizzaOrderingSystem.Utils.csproj" />
   </ItemGroup>
 
 

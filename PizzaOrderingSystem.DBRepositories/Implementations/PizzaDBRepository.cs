@@ -33,7 +33,7 @@ namespace PizzaOrderingSystem.API.DataManagers
             throw new System.NotImplementedException("DB Not Connected. Using File System for Storage");
         }
 
-        public List<PizzaTopping> GetAllToppings()
+        public List<PizzaTopping> GetAllTopping()
         {
             throw new System.NotImplementedException("DB Not Connected. Using File System for Storage");
         }

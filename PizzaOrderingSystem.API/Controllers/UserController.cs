@@ -3,6 +3,8 @@ using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using PizzaOrderingSystem.API.DataManagers;
 using PizzaOrderingSystem.Models.Classes.Users;
+using PizzaOrderingSystem.Utils.Security;
+using System;
 using System.Collections.Generic;
 
 namespace PizzaOrderingSystem.API.Controllers
@@ -34,7 +36,10 @@ namespace PizzaOrderingSystem.API.Controllers
                 Dictionary<string, string> tokenDictionary = new Dictionary<string, string>();
                 tokenDictionary["user_id"] = user.Id.ToString();
                 tokenDictionary["user_name"] = user.Name;
-                user.Token = JsonConvert.SerializeObject(tokenDictionary).ToString();
+                user.Password = String.Empty;
+                user.Id = 0;
+                user.UserName = String.Empty;
+                user.Token = SecurityUtils.Encrypt(JsonConvert.SerializeObject(tokenDictionary).ToString());
                 return user;
             }
             return user;

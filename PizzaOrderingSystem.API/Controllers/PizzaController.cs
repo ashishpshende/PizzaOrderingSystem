@@ -38,10 +38,10 @@ namespace PizzaOrderingSystem.API.Controllers
 
             return results;
         }
-        [HttpGet("toppings")]
-        public List<PizzaTopping> GetAllToppings()
+        [HttpGet("Topping")]
+        public List<PizzaTopping> GetAllTopping()
         {
-            List<PizzaTopping> results = _pizzaDataManager.GetAllToppings();
+            List<PizzaTopping> results = _pizzaDataManager.GetAllTopping();
 
             return results;
         }

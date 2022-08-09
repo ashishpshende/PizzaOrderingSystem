@@ -57,7 +57,7 @@ namespace PizzaOrderingSystem.FileRepositories.Classes
             return _pizzaSizeRepository.All();
         }
 
-        public List<PizzaTopping> GetAllToppings()
+        public List<PizzaTopping> GetAllTopping()
         {
             return _pizzaToppingRepository.All();
         }

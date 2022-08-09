@@ -17,9 +17,10 @@ export class LoginComponent implements OnInit {
   ngOnInit(): void {
   }
   LoginButtonClicked()
-  {this.router.navigate(['/pizza-menu']);
+  {
     this.userService.login(this.user).subscribe(result => {
-     
+      
+        this.router.navigate(['/pizza-menu']);
     })
   }
 }

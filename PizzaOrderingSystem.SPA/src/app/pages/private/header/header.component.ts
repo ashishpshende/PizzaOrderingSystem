@@ -13,6 +13,6 @@ export class HeaderComponent implements OnInit {
   }
  LogoutClicked()
  {
-  alert("Logout");
+  localStorage.setItem('auth-token', "");
  }
 }

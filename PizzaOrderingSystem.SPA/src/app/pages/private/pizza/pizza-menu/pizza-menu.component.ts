@@ -44,7 +44,7 @@ export class PizzaMenuComponent implements OnInit, AfterViewInit {
     this.pizzas = this.pizzaService.pizzas;
     this.PizzaBases = this.pizzaService.PizzaBases;
     this.pizzaSizes = this.pizzaService.pizzaSizes;
-    this.pizzaToppings = this.pizzaService.pizzaToppings;
+    this.pizzaToppings = this.pizzaService.pizzaTopping;
     this.pizzaSauces = this.pizzaService.pizzaSauces;
     this.pizzaCheeseList = this.pizzaService.pizzaCheeseList;
   }
@@ -87,7 +87,7 @@ export class PizzaMenuComponent implements OnInit, AfterViewInit {
     this.pizzaService.getPizzaCheeseList().subscribe(entities => {
       this.pizzaCheeseList = entities;
     })
-    this.pizzaService.getPizzaToppings().subscribe(entities => {
+    this.pizzaService.getPizzaTopping().subscribe(entities => {
       this.pizzaToppings = entities;
     })
     this.pizzaService.getPizzaSizes().subscribe(entities => {

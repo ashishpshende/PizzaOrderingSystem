@@ -240,3 +240,10 @@
   border-style: dashed;
 
 }
+.no-item-cart
+{
+  width: 50%;
+  height: 150%;
+
+  flex-direction: column;
+}

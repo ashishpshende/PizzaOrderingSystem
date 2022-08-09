@@ -14,7 +14,7 @@ export class URLConstants {
 
     public static PIZZAS = environment.serverURL+ "/pizza/all";
     public static PIZZA_BASES = environment.serverURL+ "/pizza/bases";
-    public static PIZZA_TOPPINGS = environment.serverURL+ "/pizza/toppings";
+    public static PIZZA_Topping = environment.serverURL+ "/pizza/Topping";
     public static PIZZA_CHEESE_LIST = environment.serverURL+ "/pizza/cheeses";
     public static PIZZA_SIZES = environment.serverURL+ "/pizza/sizes";
     public static PIZZA_SAUSES = environment.serverURL+ "/pizza/sauces";
@@ -24,7 +24,9 @@ export class URLConstants {
     public static REMOVE_ITEM_FROM_CART = environment.serverURL+ "/cart/removeItem";
     public static CLEAR_CART = environment.serverURL+ "/cart/clear";
 
-
+    public static GET_ORDERS = environment.serverURL+ "/order/all";
+    public static GET_ORDER = environment.serverURL+ "/order/details";
+    public static UPDATE_ORDER = environment.serverURL+ "/order/update";
 
 
 }

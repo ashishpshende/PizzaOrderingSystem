@@ -24,7 +24,7 @@ export class PizzaService {
   PizzaBases:PizzaBase[];
   pizzaSauces:PizzaSuace[];
   pizzaCheeseList:PizzaCheese[];
-  pizzaToppings:PizzaTopping[];
+  pizzaTopping:PizzaTopping[];
   pizzaSizes:PizzaTopping[];
   authorizationToken:any;
   
@@ -38,7 +38,7 @@ export class PizzaService {
     this.pizzaSizes = new Array();
     this.pizzaSauces = new Array();
     this.pizzaCheeseList = new Array();
-    this.pizzaToppings = new Array();
+    this.pizzaTopping = new Array();
    }
 
    
@@ -47,7 +47,7 @@ export class PizzaService {
     this.getPizzaBases();    
     this.getPizzaSizes();
     this.getPizzaCheeseList();
-    this.getPizzaToppings()
+    this.getPizzaTopping()
     this.getPizzaBases()
 
   }
@@ -94,9 +94,9 @@ export class PizzaService {
       catchError(this.networkService.handleError<PizzaSize[]>('get', []))
     );
   }
-  getPizzaToppings():  Observable<PizzaTopping[]> {
+  getPizzaTopping():  Observable<PizzaTopping[]> {
   
-    return this.http.get<PizzaTopping[]>(URLConstants.PIZZA_TOPPINGS)
+    return this.http.get<PizzaTopping[]>(URLConstants.PIZZA_Topping)
     .pipe(
       tap(_ => this.networkService.log('fetched Entities')),
       catchError(this.networkService.handleError<PizzaTopping[]>('get', []))

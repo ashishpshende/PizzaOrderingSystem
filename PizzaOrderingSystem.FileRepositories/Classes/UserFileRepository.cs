@@ -50,11 +50,9 @@ namespace PizzaOrderingSystem.FileRepositories.Classes
                 var jsonData = System.IO.File.ReadAllText(FilePath);
                 var users = JsonConvert.DeserializeObject<List<User>>(jsonData);
                 result = users.FirstOrDefault(x => x.UserName == user.UserName);
-
-
-                return true;//!BC.Verify(user.Password, result.Password);
-
-              
+                user.Id = result.Id;
+                user.UserName = result.UserName;
+                return true; //!BC.Verify(user.Password, result.Password);              
             }
             catch (Exception ex)
             {

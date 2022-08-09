@@ -1,1 +1,102 @@
-[]
+[
+  {
+    "user": {
+      "id": 1
+    },
+    "CartTotal": 63783,
+    "Items": [
+      {
+        "Quantity": 2,
+        "Discount": "10",
+        "DiscountPercent": "10",
+        "pizza": {
+          "Id": "1",
+          "Type": "Veg",
+          "Name": "Creamy Tomato Pasta Pizza - Veg",
+          "Image": "https://images.dominos.co.in/CreamyTomatoPPVG.jpg",
+          "Description": "Loaded with a delicious creamy tomato pasta topping , green capsicum",
+          "BasePrice": 100,
+          "Sauce": {
+            "Id": 1,
+            "Name": "Marinara",
+            "Price": 20,
+            "Selected": false
+          },
+          "Toppings": {
+            "Id": 1,
+            "Name": "Pepperoni",
+            "Price": 20
+          },
+          "PizzaBase": {
+            "Id": 1,
+            "Name": "100 Wheat Thin Crust",
+            "Price": 50,
+            "Selected": false
+          },
+          "PizzaSize": {
+            "Id": 3,
+            "Name": "Regular",
+            "Price": 233,
+            "Selected": true
+          },
+          "Cheese": {
+            "Id": 1,
+            "Name": "Regular",
+            "Price": 50,
+            "Selected": false
+          }
+        }
+      }
+    ]
+  },
+  {
+    "user": {
+      "id": 2
+    },
+    "CartTotal": 63783,
+    "Items": [
+      {
+        "Quantity": 2,
+        "Discount": "10",
+        "DiscountPercent": "10",
+        "pizza": {
+          "Id": "2",
+          "Type": "Veg",
+          "Name": "Corn n Cheese Paratha Pizza",
+          "Image": "https://images.dominos.co.in/Corn.jpg",
+          "Description": "A delicious fusion of corn stuffed paratha and cheesy pizza.",
+          "BasePrice": 100,
+          "Sauce": {
+            "Id": 1,
+            "Name": "Marinara",
+            "Price": 20,
+            "Selected": false
+          },
+          "Toppings": {
+            "Id": 1,
+            "Name": "Pepperoni",
+            "Price": 20
+          },
+          "PizzaBase": {
+            "Id": 1,
+            "Name": "100% Wheat Thin Crust",
+            "Price": 50,
+            "Selected": false
+          },
+          "PizzaSize": {
+            "Id": 1,
+            "Name": "Regular",
+            "Price": 233,
+            "Selected": true
+          },
+          "Cheese": {
+            "Id": 1,
+            "Name": "Regular",
+            "Price": 50,
+            "Selected": false
+          }
+        }
+      }
+    ]
+  }
+]

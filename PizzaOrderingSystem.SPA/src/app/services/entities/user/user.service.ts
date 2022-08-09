@@ -26,14 +26,25 @@ export class UserService {
     );
   }
   login(user:User):  Observable<Boolean> {
+
     return this.http.post<boolean>(URLConstants.USER_LOGIN, user, this.httpOptions).pipe(
-      tap((newEntity: boolean) => this.networkService.log(`User Logged In`)),
+      tap((newEntity: any) =>       
+      {
+        this.networkService.log(`User Logged In`)
+        localStorage.setItem('auth-token', newEntity.token);
+      }
+      ),
       catchError(this.networkService.handleError<boolean>('Exception while user login'))
     );
   }
   logout(user:User):  Observable<Boolean> {
     return this.http.post<boolean>(URLConstants.USER_LOGOUT, user, this.httpOptions).pipe(
-      tap((newEntity: boolean) => this.networkService.log(`User Logged In`)),
+      tap((newEntity: boolean) =>
+      
+      {
+        localStorage.setItem('auth-token', "");
+        this.networkService.log(`User Logged In`)
+      }),
       catchError(this.networkService.handleError<boolean>('Exception while user login'))
     );
   }

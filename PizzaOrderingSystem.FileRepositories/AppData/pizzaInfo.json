@@ -34,7 +34,7 @@
         "Selected": false
       }
     ],
-    "Toppings": [
+    "Topping": [
       {
         "Name": "Pepperoni",
         "Price": 20,
@@ -109,7 +109,7 @@
         "Selected": false
       }
     ],
-    "Toppings": [
+    "Topping": [
       {
         "Name": "Pepperoni",
         "Price": 20,
@@ -184,7 +184,7 @@
         "Selected": false
       }
     ],
-    "Toppings": [
+    "Topping": [
       {
         "Name": "Pepperoni",
         "Price": 20,
@@ -259,7 +259,7 @@
         "Selected": false
       }
     ],
-    "Toppings": [
+    "Topping": [
       {
         "Name": "Pepperoni",
         "Price": 20,
@@ -334,7 +334,7 @@
         "Selected": false
       }
     ],
-    "Toppings": [
+    "Topping": [
       {
         "Name": "Pepperoni",
         "Price": 20,
@@ -409,7 +409,7 @@
         "Selected": false
       }
     ],
-    "Toppings": [
+    "Topping": [
       {
         "Name": "Pepperoni",
         "Price": 20,

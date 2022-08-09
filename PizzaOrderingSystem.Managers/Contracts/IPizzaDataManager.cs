@@ -8,7 +8,7 @@ namespace PizzaOrderingSystem.API.DataManagers
     {
         List<Pizza> GetAllPizzas();
         List<PizzaBase> GetAllBases();
-        List<PizzaTopping> GetAllToppings();
+        List<PizzaTopping> GetAllTopping();
         List<PizzaSauce> GetAllSauses();
         List<PizzaSize> GetAllSizes();
         List<PizzaCheese> GetAllCheeseList();

@@ -23,6 +23,13 @@ namespace PizzaOrderingSystem.API.Controllers
 
             return results;
         }
-
+        [HttpPost("save")]
+        public Order Save([FromBody] Order order)
+        {
+             if(_orderDataManger.Save(order))
+            {
+            } 
+            return order;
+        }
     }
 }

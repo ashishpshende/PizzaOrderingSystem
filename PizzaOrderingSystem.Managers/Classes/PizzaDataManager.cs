@@ -39,9 +39,9 @@ namespace PizzaOrderingSystem.API.DataManagers
             return _pizzaRepository.GetAllSizes();
         }
 
-        public List<PizzaTopping> GetAllToppings()
+        public List<PizzaTopping> GetAllTopping()
         {
-            return _pizzaRepository.GetAllToppings();
+            return _pizzaRepository.GetAllTopping();
         }
 
       
